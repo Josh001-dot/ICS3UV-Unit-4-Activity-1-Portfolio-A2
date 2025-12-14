@@ -1,22 +1,21 @@
 /**
  * @author Joshua Adeyemi
  * @version 1.0.0
- * @date 2025-01-01
+ * @date 2025-12-14
  * @fileOverview This program prints even numbers between two odd numbers.
  */
 
-const prompt = require("prompt-sync")()
+// Hardcoded test values (replace these for different inputs)
+const start: number = 3;  // must be odd
+const end: number = 21;   // must be odd
 
-const start = Number(prompt("Please enter a starting value (it must be an odd number): "))
-const end = Number(prompt("Please enter an ending value (it must be an odd number): "))
-
-let result = ""
+let result: string = "";
 
 for (let i = start + 1; i < end; i++) {
   if (i % 2 === 0) {
-    result += i + " "
+    result += i + " ";
   }
 }
 
-console.log(result.trim())
-console.log("\nDone.")
+console.log(result.trim());
+console.log("\nDone.");
